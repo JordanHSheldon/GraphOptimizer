@@ -19,6 +19,6 @@ public class MainApplication {
 	@GetMapping("/")
 	public String GraphPoints(@RequestParam(value = "myName", defaultValue = "World") String name) {
 		PointsService points = new PointsService(10);
-		return String.format("<html><h1>Html</h1></html>");
+		return "<html><h1>"+points+"</h1></html>";
 	}
 }
